@@ -1,17 +1,31 @@
 .header {
     background-color: #16a085;
-    height: 300px;
+    height: 500px;
+    display: table;
+    width: 100%;
+}
+
+.container-fluid {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .container-fluid h1 {
     text-align: center;
     color: #fff;
-    margin-top: 100px;
     font-size: 64px;
-    border: 5px solid #fff;
     padding: 20px;
-    margin-left: 35%;
-    margin-right:35%;
-    
-    
+    display: inline-block;
+}
+
+.border {
+    border: 5px solid #fff;
+    display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+    .container-fluid h1 {
+        padding: 10px;
+    }
 }
